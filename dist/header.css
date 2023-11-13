@@ -1,0 +1,61 @@
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  height: 45px;
+  padding: 0 80px;
+}
+@media (max-width: 800px) {
+  header .personal-links {
+    display: none;
+  }
+}
+
+.shop-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  font-size: 12px;
+}
+@media (max-width: 800px) {
+  .shop-container {
+    display: none;
+  }
+}
+
+/* Shop links */
+.shop ul {
+  list-style-type: none;
+  margin: 0;
+}
+.shop li {
+  display: inline;
+  font-size: 12px;
+}
+.shop a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.shop .line {
+  border-left: 1px solid black;
+  height: 10px;
+}
+
+/* Shop links */
+/* Logo */
+.logo {
+  display: grid;
+  grid-template-columns: 50px auto;
+  align-items: center;
+}
+.logo .personal-links a {
+  font-size: 12px;
+}
+.logo .three-logo {
+  height: 30px;
+  width: 50px;
+}
+
+/* Logo *//*# sourceMappingURL=header.css.map */

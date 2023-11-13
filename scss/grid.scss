@@ -1,0 +1,164 @@
+/* Mixins */
+@mixin title-image {
+  width: 100px;
+}
+/* GRID */
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.grid2 {
+  display: grid;
+  /* place in twos */
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid3 {
+  /* place in three (just messing around with grid here)  */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Grid 2 (for tiles on mobile) */
+@media (max-width: 800px) {
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10px;
+  }
+}
+
+/* Three Your Way Banner */
+.container {
+  background: linear-gradient(#ff7b67, #ff8474 26%, #ffaba9 66%, #ffdced);
+  padding: 10px 100px;
+}
+
+.aboutImg {
+  height: 350px;
+  width: 60%;
+  margin-left: auto;
+  border-radius: 30px;
+}
+
+@media (max-width: 1000px) {
+  .aboutImg {
+    width: 100%;
+  }
+  @media (max-width: 800px) {
+    .aboutSection {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      padding-bottom: 10px;
+    }
+  }
+}
+/* Three Your Way Banner */
+
+/* Mobile Plan made by You */
+.plan-container {
+  padding: 0 100px;
+  margin-bottom: 30px;
+}
+
+.tile {
+  border: 1px solid #ffbfc5;
+  padding: 5%;
+  .title-img {
+    @include title-image;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tile {
+    width: 100%;
+  }
+  @media (max-width: 800px) {
+    .tile {
+      padding-bottom: 10px;
+    }
+  }
+}
+/* Mobile Plan made by You */
+
+/* Our plans tiles */
+.our-plans-tile {
+  background-color: white;
+}
+
+/* Simple Steps Tiles */
+@mixin header-space {
+  padding: 10px 0 10px 0;
+}
+.simple-tile {
+  background-color: white;
+  padding: 5%;
+  .title-img {
+    @include title-image;
+  }
+}
+
+@media (max-width: 500px) {
+  .search {
+    display: none;
+  }
+}
+/* Simple Steps Tiles */
+
+/* Our Plans */
+
+.our-plans-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.our-plans {
+  border: 1px solid #ffbfc5;
+  h3 {
+    margin: 0;
+    padding-top: 15px;
+  }
+  p {
+    padding: 0 10%;
+  }
+}
+.our-plans-title {
+  background-color: #fdf2f0;
+  height: 50px;
+  padding: 0 10%;
+}
+
+.lite {
+  background-color: #ffbfc5;
+}
+
+.lite-check {
+  content: "\2713";
+}
+
+.complete {
+  background: linear-gradient(#ff7b67, #ff8474 26%, #ffaba9 66%, #ffdced);
+}
+
+/* Our Plans */
+
+/* Footer */
+
+footer {
+  background-color: var(--footer-bg);
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 12px;
+}
+
+.footer-container {
+  padding: 0 100px;
+}
+
+.footer-logo img {
+  height: 200px;
+  width: 100%;
+  vertical-align: bottom;
+}
