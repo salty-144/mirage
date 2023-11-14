@@ -1,22 +1,37 @@
-/* some basic setups */
-
+/* basic setups */
 * {
   /* for all elements */
   box-sizing: border-box;
 }
-/* color theme and variables */
+/* color themes */
 :root {
   --headerColor: #000000;
   --paragraphColor: #000000;
   --footer-bg: #fdf2f0;
-} 
+  --lite-tile: #fdf2f0;
+  --value-tile: #ffbfc5;
+  --complete-tile: #ffaba9;
+}
 
+/* I dont get why this doesnt work 
+
+--complete-tile: linear-gradient(#ff7b67, #ff8474 26%, #ffaba9 66%, #ffdced);
+
+*/
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--headerColor);
   background-color: white;
 }
+
+.hr {
+  border: 1px solid #ffaba9;
+  padding: 0 100px;
+  margin: 0 auto ;
+  width: 80%;
+}
+
 /* headings */
 h1 {
   font-size: 34px;
@@ -29,7 +44,6 @@ h2 {
   color: var(--paragraphColor);
 }
 a {
-  color: var(--headerColor);
   /* remove default underlining */
   text-decoration: none;
 }
@@ -61,7 +75,3 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-
-
-

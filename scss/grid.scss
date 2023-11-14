@@ -29,6 +29,7 @@
     padding-bottom: 10px;
   }
 }
+/* GRID */
 
 /* Three Your Way Banner */
 .container {
@@ -108,7 +109,6 @@
 /* Simple Steps Tiles */
 
 /* Our Plans */
-
 .our-plans-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -117,34 +117,33 @@
   border: 1px solid #ffbfc5;
   h3 {
     margin: 0;
-    padding-top: 15px;
   }
   p {
     padding: 0 10%;
   }
 }
 .our-plans-title {
-  background-color: #fdf2f0;
-  height: 50px;
+  height: 70px;
   padding: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 
 .lite {
-  background-color: #ffbfc5;
+  background-color: var(--lite-tile);
 }
 
-.lite-check {
-  content: "\2713";
+.value{
+  background-color: var(--value-tile) ;
 }
 
-.complete {
-  background: linear-gradient(#ff7b67, #ff8474 26%, #ffaba9 66%, #ffdced);
+.complete{
+  background-color:  var(--complete-tile);
 }
-
 /* Our Plans */
 
 /* Footer */
-
 footer {
   background-color: var(--footer-bg);
   color: black;
@@ -158,7 +157,15 @@ footer {
 }
 
 .footer-logo img {
-  height: 200px;
+  height: auto;
   width: 100%;
+  margin-top: 20px;
   vertical-align: bottom;
 }
+
+@media (max-width: 500px) {
+  .footer-logo img {
+    vertical-align: bottom;
+  }
+}
+/* Footer */

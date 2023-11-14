@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Mixins */
 /* GRID */
 .grid1 {
@@ -27,6 +26,7 @@
     padding-bottom: 10px;
   }
 }
+/* GRID */
 /* Three Your Way Banner */
 .container {
   background: linear-gradient(#ff7b67, #ff8474 26%, #ffaba9 66%, #ffdced);
@@ -109,28 +109,29 @@
 }
 .our-plans h3 {
   margin: 0;
-  padding-top: 15px;
 }
 .our-plans p {
   padding: 0 10%;
 }
 
 .our-plans-title {
-  background-color: #fdf2f0;
-  height: 50px;
+  height: 70px;
   padding: 0 10%;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 }
 
 .lite {
-  background-color: #ffbfc5;
+  background-color: var(--lite-tile);
 }
 
-.lite-check {
-  content: "✓";
+.value {
+  background-color: var(--value-tile);
 }
 
 .complete {
-  background: linear-gradient(#ff7b67, #ff8474 26%, #ffaba9 66%, #ffdced);
+  background-color: var(--complete-tile);
 }
 
 /* Our Plans */
@@ -148,7 +149,15 @@ footer {
 }
 
 .footer-logo img {
-  height: 200px;
+  height: auto;
   width: 100%;
+  margin-top: 20px;
   vertical-align: bottom;
-}/*# sourceMappingURL=grid.css.map */
+}
+
+@media (max-width: 500px) {
+  .footer-logo img {
+    vertical-align: bottom;
+  }
+}
+/* Footer *//*# sourceMappingURL=grid.css.map */
