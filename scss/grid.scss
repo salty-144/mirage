@@ -121,6 +121,9 @@
   p {
     padding: 0 10%;
   }
+  li {
+    line-height: 30px;
+  }
 }
 .our-plans-title {
   height: 70px;
@@ -134,12 +137,12 @@
   background-color: var(--lite-tile);
 }
 
-.value{
-  background-color: var(--value-tile) ;
+.value {
+  background-color: var(--value-tile);
 }
 
-.complete{
-  background-color:  var(--complete-tile);
+.complete {
+  background-color: var(--complete-tile);
 }
 /* Our Plans */
 
